@@ -109,7 +109,7 @@ li{
        START BENNAR SECTION
  ============================ */
  .banner-area{
-       background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,1.6)),url(/img/banner.jpg);
+      background-image:   /* linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,1.6)),  */ url(/img/banner.jpg);
        background-size: cover;
        background-position: center center;
        display: flex;
