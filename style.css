@@ -306,16 +306,3 @@ li{
       text-transform: capitalize;
       margin-top: 50px;
     }
-
-    @media only screen and (max-width:600px){
-      .main{
-        width:320px;
-      }
-      .footer-wave-box {
-        display: none;
-      }
-      .single-footer:first-child, .single-footer {
-        width: 100%;
-        margin-bottom:30px;
-      }
-    }
