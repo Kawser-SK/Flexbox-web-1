@@ -1,0 +1,321 @@
+/**
+*  Flexbox practice
+* author: KAWSER AHAMED
+* version: 0.0.1
+* Date: 06-02-2021
+**/
+
+/* ============================
+        DEFULTE CSS
+ ============================ */
+ *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body{
+   
+}
+a{
+      text-decoration: none;
+}
+li{
+      list-style: none;
+}
+.container{
+      width: 80%;
+      margin: 0 auto;
+}
+
+ /* ============================
+        START HEAEDR SECTION
+ ============================ */
+.logo{
+      flex-basis: 30%;
+      margin: 4px 0 0 50px;
+}
+ .logo a{
+   font-size: 35px;
+   font-weight: bold;
+   color: #fff;
+   text-transform: uppercase;
+ }
+
+.header-section{
+      display: flex;
+      background: rgb(56, 95, 71);
+      padding: 10px 0;
+}
+
+.header-nav{
+      flex-basis: 70%;
+      margin-right: 50px;
+}
+
+.header-nav a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: rgb(56, 95, 71);
+      height: 50px;
+      text-transform: uppercase;
+}
+.header-nav a:hover{
+      background: #000;
+      color: #fff;
+      transition: .3s;    
+}
+.header-nav ul{
+      display: flex;
+}
+.header-nav li{
+      position: relative;
+      width: 100%;
+      text-align: center;
+}
+.header-nav li:hover .dropdown-1 > li{
+      display: block;
+      top: 0;
+}
+.dropdown-1 li{
+      display: none;
+      position: relative;
+}
+.dropdown-1{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+}
+.dropdown-1 li:hover .dropdown-2 li{
+      display: block;
+}
+
+.dropdown-2 li{ 
+      display: none;
+}
+.dropdown-2{ 
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 150px;
+}
+
+
+  /* ============================
+       START BENNAR SECTION
+ ============================ */
+ .banner-area{
+       background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,1.6)),url(/img/banner.jpg);
+       background-size: cover;
+       background-position: center center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 100vh;
+ }
+ .banner-area h2{
+       text-transform: uppercase;
+       color: #fff;
+       font-size: 60px;      
+ }
+
+
+ /* ============================
+       START SERVICES SECTION
+ ============================ */
+
+ .services-section{
+       background: #262626;
+       padding: 60px 0;
+ }
+ .services-heading{
+       color: #fff;
+       text-align: center;
+       font-size: 40px;
+       line-height: 140px;
+ }
+.box-area{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+}
+.single-box{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: auto;
+      background: #fff;
+      border-radius: 4px;
+      text-align: center;
+      margin: 20px;
+      padding: 30px;
+     transition: .3s;
+
+}
+.single-box:hover{
+      background: #000;
+      color: #fff;
+      transition: .9s;
+}
+.img-area{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 120px;
+      border: 5px solid #ddd;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      padding: 20px;
+      background-size: cover;
+      background-position: center center;
+}
+.header-text{
+      font-size: 24px;
+      line-height: 55px;
+}
+.single-box:nth-child(1) .img-area{
+      background-image: url(/img/bg-1.png);
+}
+.single-box:nth-child(2) .img-area{
+      background-image: url(/img/bg-1.png);
+}
+.single-box:nth-child(3) .img-area{
+      background-image: url(/img/bg-1.png);
+}
+.single-box:nth-child(4) .img-area{
+      background-image: url(/img/bg-1.png);
+}
+.single-box:nth-child(5) .img-area{
+      background-image: url(/img/bg-1.png);
+}
+.single-box:nth-child(6) .img-area{
+      background-image: url(/img/bg-1.png);
+}
+
+  /* ============================
+       START IMAGE GALLERY  SECTION
+ ============================ */
+.gallery{
+      padding: 50px 0;
+      background: rgb(0, 0, 0);
+}
+.wrapper h1{
+      text-align: center;
+      font-size: 65px;
+      padding: 40px 0 80px 0;
+      color: #fff;
+}
+.gallery-img-area {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; 
+      
+}
+.single-img{
+      padding: 0 20px 20px;
+    
+}
+.single-img img{
+      width: 400px;height: 500px;     
+     
+}
+.single-img:hover{
+      opacity: .7;
+      transition:.3s;
+}
+
+
+
+   /* ============================
+       START POREFOLIO SECTION
+ ============================ */
+
+ .footer-area {
+      padding: 100px 0;
+      background: #23242b;
+       color:#fff;
+      position:relative;
+    }
+    .main {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .single-footer {
+      width: 230px;
+    }
+    .single-footer:first-child {
+      width: 400px;
+    }
+    .single-footer h4 {
+      text-transform: capitalize;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    .footer-social a {
+      color: #fff;
+      border: 1px solid #fff;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .footer-social {
+      margin-top: 20px;
+    }
+    .single-footer ul {
+      list-style: none;
+    }
+    .single-footer ul li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 20px;
+    }
+    .single-footer ul li a {
+      color: #fff;
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+    .single-footer ul li a i {
+      position: absolute;
+      left: 0;
+      top: 5px;
+    }
+    
+    .copy {
+      text-align: center;
+      text-transform: capitalize;
+      margin-top: 50px;
+    }
+
+    @media only screen and (max-width:600px){
+      .main{
+        width:320px;
+      }
+      .footer-wave-box {
+        display: none;
+      }
+      .single-footer:first-child, .single-footer {
+        width: 100%;
+        margin-bottom:30px;
+      }
+    }
